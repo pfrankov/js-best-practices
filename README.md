@@ -71,3 +71,7 @@ a=x=>{   //
 return x // Good
 }        //
 ```
+
+# Contributing
+Please feel free to extend this list of new "best" practices in JavaScript.  
+Pull Requests are welcomed!
