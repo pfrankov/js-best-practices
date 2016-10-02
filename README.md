@@ -26,7 +26,7 @@ const maxLength = 1 // Good!
 ```
 
 ### Never put the semicolons to the end of a line
-It will be still valid JavaScript
+It will be still valid JavaScript. Valid means good.
 ```js
 const a = 1; // Bad
 const a = 1 // Good!
@@ -38,7 +38,7 @@ const maxLength = 1 // Bad
 const mL=1 // Good!
 ```
 
-### Indentations are the hard work!
+### Indentations is a hard work!
 You can write less code by rejection of any type of indentation.
 ```js
 function a() { //
@@ -57,6 +57,21 @@ function a() { //
 }              //
 ```
 
+### Avoid semicolons elsewhere
+There is no reason to use semicolons at all.
+
+### Avoid `for` loops
+`for` loops are using semicolons on their syntax. Replace them by array's methods or as a last resort `while`
+```js
+const v={i:0}
+for(;v.i<10;v.i++) // Bad
+
+[0,1,2,3,4,5,6,7,8,9].forEach(i=>i)
+
+const v={i:0}
+while(v.i<10)v.i++ // Ok
+```
+
 ### The `function` word is abandoned now
 Never use it again!
 ```js
@@ -71,6 +86,13 @@ a=x=>{   //
 return x // Good
 }        //
 ```
+If you need to return an object — use parentheses syntax:
+```js
+a=x=>{a:1} // Will not work as expected
+
+a=x=>({a:1}) // Great!
+```
+
 
 # Contributing
 Please feel free to extend this list of new "best" practices in JavaScript.  
