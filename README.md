@@ -7,10 +7,11 @@
 </h1>
 
 ### The main ideas
-1. Write less to save your time to be more productive.
+1. Write less characters to save your time and to be more productive.
 2. Write at least valid ES6 code. Valid means good enough.
 3. Write robust, unified code that should be ready for any kind of refactoring.
 4. Avoid any side effects. Any!
+5. `undefined` is not a function!
 
 #### Use `const` instead of anything
 ```js
@@ -24,6 +25,8 @@ const variableHash = {variable:1}
 variableHash.variable = 2
 variableHash // {variable:2} Properties of const are still mutable!
 ```
+You think that it is uncomfortable? Yes, and it should be!  
+Less variables means less side effects means much robust code.
 
 #### Use as less `const` word as you can
 ```js
@@ -50,8 +53,9 @@ const a = 1 // Good!
 
 #### Shorten your "variables" names
 ```js
-const maxLength = 1 // Bad
-const mL=1 // Good!
+const maxLength = 1 // Bad. 19 chars. 20 keystrokes (Shift for "L")
+const mL=1 // Ok. 11 keystrokes.
+const ml=1 // Good. 10 keystrokes. Twice less than in the first example.
 ```
 
 #### Indentations is a hard work!
@@ -66,7 +70,7 @@ return 1      // Good!
 }             //
 ```
 Or, in very rare case is acceptable to use the semicolons as intentations.  
-In this case, use 3 semicolons.
+In this case, use 3 semicolons. It's a standard for such things.
 ```js
 function a(){ //
 ;;;return 1    // Ok
