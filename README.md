@@ -25,6 +25,15 @@ variableHash.variable = 2
 variableHash // {variable:2} Properties of const are still mutable!
 ```
 
+#### Use as less `const` word as you can
+```js
+const a=1 //
+const b=2 // Bad. 29 chars
+const c=3 //
+
+const a=1,b=2,c=3 // Good. 17 chars. Almost ×2 speed up
+```
+
 #### Always use lowercase name of "variables"
 As you may know, `const` doesn't mean that the variable is constant. It means only intent of not changing the variable. Since they are not constants, you don't need to follow weird code conventions from retarded languages.
 ```js
