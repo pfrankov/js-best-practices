@@ -6,13 +6,13 @@
   <br>
 </h1>
 
-## The main ideas
+### The main ideas
 1. Write less to save your time to be more productive.
 2. Write at least valid ES6 code. Valid means good enough.
 3. Write robust, unified code that should be ready for any kind of refactoring.
 4. Avoid any side effects. Any!
 
-### Use `const` instead of anything
+#### Use `const` instead of anything
 ```js
 var one = 1 // Bad
 let one = 1 // Also bad
@@ -25,27 +25,27 @@ variableHash.variable = 2
 variableHash // {variable:2} Properties of const are still mutable!
 ```
 
-### Always use lowercase name of "variables"
+#### Always use lowercase name of "variables"
 As you may know, `const` doesn't mean that the variable is constant. It means only intent of not changing the variable. Since they are not constants, you don't need to follow weird code conventions from retarded languages.
 ```js
 const MAX_LENGTH = 1 // Bad
 const maxLength = 1 // Good!
 ```
 
-### Never put the semicolons to the end of a line
+#### Never put the semicolons to the end of a line
 It will be still valid JavaScript. Valid means good.
 ```js
 const a = 1; // Bad
 const a = 1 // Good!
 ```
 
-### Shorten your "variables" names
+#### Shorten your "variables" names
 ```js
 const maxLength = 1 // Bad
 const mL=1 // Good!
 ```
 
-### Indentations is a hard work!
+#### Indentations is a hard work!
 You can write less code by rejection of any type of indentation.
 ```js
 function a() { //
@@ -64,10 +64,10 @@ function a(){ //
 }              //
 ```
 
-### Avoid semicolons elsewhere
+#### Avoid semicolons elsewhere
 There is no reason to use semicolons at all.
 
-### Avoid `for` loops
+#### Avoid `for` loops
 `for` loops are using semicolons on their syntax. Replace them by array's methods or as a last resort `while`
 ```js
 const v={i:0}
@@ -79,7 +79,7 @@ const v={i:0}
 while(v.i<10)v.i++ // Ok
 ```
 
-### The `function` word is abandoned now
+#### The `function` word is abandoned now
 Never use it again!
 ```js
 function a(x){return x} // Bad
@@ -101,6 +101,6 @@ a=x=>({a:1}) // Great!
 ```
 
 
-# Contributing
+## Contributing
 Please feel free to extend this list of new "best" practices in JavaScript.  
 Pull Requests are welcomed!
