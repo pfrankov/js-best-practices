@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://cloud.githubusercontent.com/assets/584632/19034366/388d25d4-898d-11e6-86bc-0cf5079ed2ea.png" alt="JavaScript Style Guide - JavaScript Standard Style" width="318">
+  <img src="https://cloud.githubusercontent.com/assets/584632/19035533/2f877488-8994-11e6-873c-863e18a4398a.png" alt="JavaScript 'Best' Practices" width="250">
   <br>
   JavaScript "Best" Practices
   <br>
