@@ -7,11 +7,13 @@
 </h1>
 
 ### The main ideas
-1. Write less characters to save your time and to be more productive.
+1. Write fewer characters to save your time and to be more productive.
 2. Write at least valid ES6 code. Valid means good enough.
 3. Write robust, unified code that should be ready for any kind of refactoring.
 4. Avoid any side effects. Any!
-5. `undefined` is not a function!
+5. Remember: you are the only one Fullstack Developer who will see this code.
+6. Any code should be rewritten after 1 year — nobody wants to support old-fashioned frameworks.
+7. `undefined` is not a function!
 
 #### Use `const` instead of anything
 ```js
