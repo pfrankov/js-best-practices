@@ -1,4 +1,6 @@
 # JavaScript "Best" Practices
+![hipsterlogogenerator_1475488442538](https://cloud.githubusercontent.com/assets/584632/19033852/c869f0a4-898a-11e6-80e8-f34964938d97.png)
+
 ## The main ideas
 1. Write less to save your time to be more productive.
 2. Write at least valid ES6 code. Valid means good enough.
