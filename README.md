@@ -77,15 +77,14 @@ function a(){ //
 There is no reason to use semicolons at all.
 
 #### Avoid `for` loops
-`for` loops are using semicolons on their syntax. Replace them by array's methods or as a last resort `while`
+`for` loops are using semicolons on their syntax. Replace them by array's methods or `while` as a last resort
 ```js
-const v={i:0}
-for(;v.i<10;v.i++) // Bad
-
-[...Array(10).keys()].forEach(i=>i) // Good
+for(const v={i:0};v.i<10;v.i++) // Bad
 
 const v={i:0}
 while(v.i<10)v.i++ // Ok
+
+[...Array(10).keys()].forEach(i=>i) // Good
 ```
 
 #### The `function` word is abandoned now
@@ -94,7 +93,7 @@ Never use it again!
 function a(x){return x} // Bad
 a=x=>x // Good
 ```
-If you need a function that has no return value or it  — simply use curly braces syntax:
+If you need a function that has no return value or it should be multiline — simply use curly braces syntax:
 ```js
 a=x=>{} // Good
 
@@ -107,6 +106,11 @@ If you need to return an object — use parentheses syntax:
 a=x=>{a:1} // Will not work as expected
 
 a=x=>({a:1}) // Great!
+
+// But!
+a=x=>({  //
+return x // Will not work. JS thinks that we have a deal with an object
+})       //
 ```
 
 
