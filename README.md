@@ -32,7 +32,7 @@ const a = 1; // Bad
 const a = 1 // Good!
 ```
 
-### Write less code as much as possible
+### Shorten your "variables" names
 ```js
 const maxLength = 1 // Bad
 const mL=1 // Good!
@@ -52,7 +52,7 @@ return 1      // Good!
 Or, in very rare case is acceptable to use the semicolons as intentations.  
 In this case, use 3 semicolons.
 ```js
-function a() { //
+function a(){ //
 ;;;return 1    // Ok
 }              //
 ```
@@ -66,7 +66,7 @@ There is no reason to use semicolons at all.
 const v={i:0}
 for(;v.i<10;v.i++) // Bad
 
-[0,1,2,3,4,5,6,7,8,9].forEach(i=>i)
+[...Array(10).keys()].forEach(i=>i) // Good
 
 const v={i:0}
 while(v.i<10)v.i++ // Ok
