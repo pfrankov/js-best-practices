@@ -1,5 +1,10 @@
-# JavaScript "Best" Practices
-![hipsterlogogenerator_1475488442538](https://cloud.githubusercontent.com/assets/584632/19034058/c5c2462a-898b-11e6-84b7-3cb5657e2e3d.png)
+<h1 align="center">
+  <img src="https://cloud.githubusercontent.com/assets/584632/19034366/388d25d4-898d-11e6-86bc-0cf5079ed2ea.png" alt="JavaScript Style Guide - JavaScript Standard Style" width="398">
+  <br>
+  JavaScript "Best" Practices
+  <br>
+  <br>
+</h1>
 
 ## The main ideas
 1. Write less to save your time to be more productive.
