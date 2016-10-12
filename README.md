@@ -120,6 +120,11 @@ return x // Will not work. JS thinks that we have a deal with an object
 ```
 
 
+#### Never use stylinters
+JShint, ESLint are both created by the devil himself.
+Just never use it, it breaks our "best practices".
+
+
 ## Contributing
 Please feel free to extend this list of new "best" practices in JavaScript.  
 Pull Requests are welcomed!
